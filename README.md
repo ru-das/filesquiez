@@ -26,9 +26,3 @@ The first visit caches the page. The PNG, document, and PDF engines download the
 | JSON, CSS, SVG, XML, HTML, JS | Whitespace and comments are removed. An aggressive target often needs a real archive format instead. |
 
 Anything else is returned unchanged, with a note. Audio and video are not compressed.
-
-## Put it on the web
-
-Any static host works. Serve this directory as the site root, with no build command. HTTPS is required so the service worker can install; `localhost` is the exception used above.
-
-[Cloudflare Pages](https://pages.cloudflare.com/) fits this project: connect the repository, leave the build command empty, and set the output directory to `/`.
