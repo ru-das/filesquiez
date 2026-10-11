@@ -12,7 +12,7 @@ There is no build step. The service worker needs HTTP, so open the folder throug
 python3 -m http.server 8080 --bind 127.0.0.1
 ```
 
-Then open http://127.0.0.1:8080.
+Then open http://127.0.0.1:8080
 
 The first visit caches the page. The PNG, document, and PDF engines download the first time you compress that kind of file, then stay cached for later visits.
 
